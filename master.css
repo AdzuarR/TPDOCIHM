@@ -1,0 +1,31 @@
+* {
+  border: 1px solid red;
+}
+
+body>div {
+  display: flex;
+}
+
+#listenav {
+  display: flex;
+}
+
+div>section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 78%;
+}
+
+div article {
+  height: 300px;
+}
+
+div>aside {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  height: 500px;
+}
+
+#listenav>li {
+  color: red;
+}
