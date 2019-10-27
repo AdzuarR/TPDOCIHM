@@ -1,5 +1,15 @@
-* {
+/** {
   border: 1px solid red;
+}*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgrey;
+}
+
+body>header {
+  background-color: #feed5f;
 }
 
 body>div {
@@ -8,24 +18,37 @@ body>div {
 
 #listenav {
   display: flex;
+  padding: 0px;
 }
 
 div>section {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 78%;
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
-div article {
-  height: 300px;
+.img_a_gauche {
+  float: left;
+}
+
+.img_a_droite {
+  float: right;
 }
 
 div>aside {
   flex-basis: 20%;
   flex-shrink: 0;
   height: 500px;
+  border: 1px dashed blue;
 }
 
 #listenav>li {
-  color: red;
+  text-align: center;
+  list-style: none;
+  border: 1px solid black;
+  border-collapse: collapse;
+
+  flex-grow: 1;
 }
